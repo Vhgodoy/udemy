@@ -22,6 +22,13 @@ public class Exerc4 {
 
 		sc.close();
 
+		int numero = 1;
+
+		do  {
+			System.out.println(numero);
+			numero ++;
+		} while (numero <= 10);
+
 	}
 
 }
