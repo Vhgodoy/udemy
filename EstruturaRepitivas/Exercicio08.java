@@ -21,6 +21,8 @@ public class Exercicio08 {
                     System.out.println(div);
                 }
         }
+
+        // test
         sc.close();
     }
 }

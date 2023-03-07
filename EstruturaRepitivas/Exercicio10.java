@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercicio09 {
+public class Exercicio10 {
 
     public static void main(String[] args) {
 
@@ -8,12 +8,15 @@ public class Exercicio09 {
 
         int N = sc.nextInt();
 
-            int fat = 1;
-            for (int i = 1 ; i<=N ; i++) {
-                 fat = fat * i;
-            }
 
-        System.out.println(fat);
+        for (int i = 1; i <= N; i ++) {
+
+
+            if (N % i == 0 ) {
+                System.out.println(i);
+
+            }
+        }
 
         sc.close();
     }
