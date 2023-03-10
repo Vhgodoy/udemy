@@ -1,6 +1,6 @@
 package aplication;
 
-import entities.triangle;
+import entities.Triangle;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -12,9 +12,9 @@ public class program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        triangle x, y;
-        x = new triangle();
-        y = new triangle();
+        Triangle x, y;
+        x = new Triangle();
+        y = new Triangle();
 
 
         System.out.println("Enter the measure of entities.triangle X:");

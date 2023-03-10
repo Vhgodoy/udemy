@@ -1,6 +1,6 @@
 package entities;
 
-public class triangle {
+public class Triangle {
 
     public double a;
     public double b;
