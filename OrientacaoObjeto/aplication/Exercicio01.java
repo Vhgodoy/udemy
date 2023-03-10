@@ -1,8 +1,6 @@
 package aplication;
 
 import entities.E01rectangle;
-import entities.Triangle;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -23,10 +21,9 @@ public class Exercicio01 {
         double perimeter = rectangle.Perimeter();
         double diagonal = rectangle.Diagonal();
 
-        System.out.println("AREA = " + area);
-        System.out.println("PERIMETER = " + perimeter);
-        System.out.println("DIAGONAL = " + diagonal);
-
+        System.out.printf("AREA = %.2f%n", rectangle.Area());
+        System.out.printf("PERIMETER = %.2f%n", rectangle.Perimeter());
+        System.out.printf("DIAGONAL = %.2f%n", rectangle.Diagonal());
         sc.close();
     }
 }
