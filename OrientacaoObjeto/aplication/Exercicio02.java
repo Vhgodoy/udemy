@@ -23,8 +23,17 @@ public class Exercicio02 {
 
         System.out.print("Tax: ");
         employee.Tax = sc.nextDouble();
+        System.out.println();
 
-        System.out.printf("Employee: %s, $ %.2f " , employee.Name, employee.NetSalary() );
+        System.out.printf("Employee: %s, $ %.2f%n " , employee.Name, employee.NetSalary() );
+        System.out.println();
+
+        System.out.print("Which percentage to increase salary? ");
+        double percentage = sc.nextDouble();
+        employee.IncreaseSalary(percentage);
+        System.out.println();
+
+        System.out.printf("Updated data: %s, $ %.2f ", employee.Name , employee.NetSalary());
 
 
 
