@@ -35,11 +35,6 @@ public class Exercicio02 {
 
         System.out.printf("Updated data: %s, $ %.2f ", employee.Name , employee.NetSalary());
 
-
-
-
-
-
         sc.close();
     }
 }
