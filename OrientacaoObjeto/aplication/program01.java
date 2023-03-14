@@ -23,6 +23,12 @@ public class program01 {
 
         Product product = new Product(name, price);
 
+        product.setName("computer");
+        System.out.println("update name: " + product.getName());
+
+        product.setPrice(1200.00);
+        System.out.println("update price: " + product.getPrice());
+
         System.out.println();
         System.out.println("Product data : " + product);
 
