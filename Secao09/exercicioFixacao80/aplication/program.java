@@ -17,7 +17,7 @@ public class program {
         System.out.print("Enter account number: ");
         int id = sc.nextInt();
 
-        System.out.print("Enter account holder :");
+        System.out.print("Enter account holder: ");
         sc.nextLine();
         String name = sc.nextLine();
 
@@ -31,6 +31,8 @@ public class program {
             double balance = sc.nextDouble();
             client.CreditAccount(balance);
             System.out.println();
+            System.out.println("Account data:");
+            System.out.println(client);
         } else {
             System.out.println();
             System.out.println("Account data:");
