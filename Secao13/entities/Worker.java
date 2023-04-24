@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class worker {
+public class Worker {
 
     private String name;
     private WorkerLevel level;
@@ -15,10 +15,10 @@ public class worker {
     private Department department;
     private List<HourContract> contracts = new ArrayList<>();
 
-    public worker() {
+    public Worker() {
     }
 
-    public worker(String name, WorkerLevel level, double baseSalary, Department department) {
+    public Worker(String name, WorkerLevel level, double baseSalary, Department department) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
@@ -47,6 +47,14 @@ public class worker {
 
     public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     public List<HourContract> getContracts() {
