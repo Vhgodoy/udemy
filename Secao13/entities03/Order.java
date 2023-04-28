@@ -9,13 +9,14 @@ import java.util.List;
 
 public class Order {
     private static SimpleDateFormat sdf =new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-    private List<OrderItem> orderItem = new ArrayList<>();
     private Date momentOrder = new Date();
     private OrderStatus status;
     private Client client;
-    public Order(Date momentOrder, OrderStatus status) {
+    private List<OrderItem> orderItem = new ArrayList<>();
+    public Order(Date momentOrder, OrderStatus status, Client client) {
         this.momentOrder = momentOrder;
         this.status = status;
+        this.client = client;
     }
 
     public Order() {
@@ -35,12 +36,6 @@ public class Order {
         this.status = status;
     }
 
-    public Client getClient() {
-        return client;
-    }
-    public void setClient(Client client) {
-        this.client = client;
-    }
 
     public List<OrderItem> getOrderItem() {
         return orderItem;
