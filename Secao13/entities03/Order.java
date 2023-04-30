@@ -1,6 +1,7 @@
 package entities03;
 
 import entities03.enums.OrderStatus;
+import org.w3c.dom.ls.LSOutput;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -55,4 +56,26 @@ public class Order {
         }
         return sum;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: ");
+        sb.append(sdf.format(momentOrder) + "\n");
+        sb.append("Order status: ");
+        sb.append(status + "\n");
+        sb.append("Client: ");
+        sb.append(client + "\n");
+        System.out.println();
+        sb.append("Order items: \n");
+        for (OrderItem item : orderItem
+             ) {
+            sb.append(item + "\n");
+        }
+        sb.append("Total Price: " + String.format("%.2f", Total()));
+
+
+        return sb.toString();
+    }
+
 }
