@@ -1,6 +1,5 @@
 package heranca156.aplication;
 
-import heranca156.entities.Account;
 import heranca156.entities.BusinessAccount;
 
 public class Program {
