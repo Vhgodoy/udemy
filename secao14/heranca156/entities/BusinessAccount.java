@@ -31,9 +31,10 @@ public class BusinessAccount extends Account{
     }
 
     @Override
-    public String toString() {
-        return getHolder() + "\n" +
-                getBalance()+ "\n" +
-                getNumber() +"\n" ;
+    public void withDraw (Double amount) {
+        super.withDraw(amount);
+        balance -= 2.0;
     }
+
+
 }
