@@ -1,7 +1,5 @@
 package entities;
 
-import java.awt.geom.Area;
-
 public class E01rectangle {
 
         public double Width ;

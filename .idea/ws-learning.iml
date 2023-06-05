@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/curso_programacao" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/processamento_de_dados" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/secao14-Heranca&amp;Polimorfismo" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Secao15-TratamentoDeExecoes" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
