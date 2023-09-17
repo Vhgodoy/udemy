@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.execption.BusinessExecption;
+
 public class Account {
 
     private Integer number;
@@ -18,6 +20,10 @@ public class Account {
         return number;
     }
 
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
     public String getHolder() {
         return holder;
     }
@@ -30,20 +36,29 @@ public class Account {
         return balance;
     }
 
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
     public Double getWithdrawLimit() {
         return withdrawLimit;
     }
 
-    public void deposit (Double amount) {balance += amount;}
+    public void setWithdrawLimit(Double withdrawLimit) {
+        this.withdrawLimit = withdrawLimit;
+    }
 
     public void withdraw (Double amount) {
-        if (amount > withdrawLimit ){
-            System.out.println("Withdraw error: The amount execeeds withdraw limit");
+        validateWithdraw(amount);
+        balance -= amount;}
+
+    private void validateWithdraw(Double amount) {
+        if (amount > getWithdrawLimit()) {
+            throw new BusinessExecption("The amount exceeds withdraw limit");
         }
-        else if (amount > balance) {
-            System.out.println("withdraw error: not enough balance");
+        if (amount > getBalance()) {
+            throw new BusinessExecption("Withdraw error: Not enough balance");
         }
-        else    System.out.printf("New balance: %.2f" , balance -= amount );
-        }
+    }
 
 }
